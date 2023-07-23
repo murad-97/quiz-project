@@ -1,0 +1,188 @@
+[[
+    {
+      "id": 1,
+      "Question": "Mary is 16 years old. She is 4 times older than her brother. How old will Mary be when she is twice his age?",
+      "Answer":[{"Answer":"That's impossible","value":0},{"Answer":"20","value":0},{"Answer":"24","value":1},{"Answer":"28","value":0}]
+   
+    },
+{
+    "id": 2,
+    "Question":"The store reduces the price of one product by 20 percent. How many percent do you need to raise to the percentage to get the original price?",
+    "Answer": [{"Answer":"25","value":1},{"Answer":"27","value":0},{"Answer":"30","value":0},{"Answer":"35","value":0}]
+
+},
+{
+    "id": 3,
+    "Question":"There are 5 machines that make 5 parts in 5 minutes. How long does it take to make 100 parts on 100 machines?",
+     "Answer":[{"Answer":"5","value":1},{"Answer":"10","value":0},{"Answer":"30","value":0},{"Answer":"35","value":0}]
+     
+},
+{
+    "id": 4,
+    "Question":" There is a lake on the surface of which water lilies float. The number of lilies doubles daily. If it takes 48 days to completely occupy the entire area of the lake, how many days will it take to occupy the floor of the lake?",
+    "Answer":[{"Answer":"47","value":1},{"Answer":"46","value":0},{"Answer":"96","value":0},{"Answer":"108","value":0}]
+},
+{
+    "id": 5,
+    "Question":"A car travels at a speed of 40 mph over a certain distance and then returns over the same distance at a speed of 60 mph. What is the average speed for the total journey?",
+    "Answer":[{"Answer":"30 mph","value":0},{"Answer":"40 mph","value":0},{"Answer":"60 mph","value":0},{"Answer":"48 mph","value":1}]
+ 
+}
+
+
+],
+[
+    {
+      "id":6 ,
+      "Question": "My sister and I __________ going to the park this afternoon.",
+      "Answer":[{"Answer":"am","value":1},{"Answer":"is","value":0},{"Answer":"are","value":0},{"Answer":"be","value":0}]
+ 
+      
+    },
+{
+    "id": 7,
+    "Question":"The book was __________ interesting that I couldn't put it down.",
+    "Answer": [
+        { "Answer": "so", "value": 1 },
+        { "Answer": "too", "value": 0 },
+        { "Answer": "very", "value": 0 },
+        { "Answer": "enough", "value": 0}
+      ]
+    
+},
+{
+    "id": 8,
+    "Question":"Identify the correct sentence:",
+     "Answer":[
+        { "Answer": "She don't like coffee.", "value": 0 },
+        { "Answer": "They doesn't like coffee.", "value": 0 },
+        { "Answer": "He doesn't like coffee.", "value": 1 },
+        { "Answer": "You doesn't like coffee.", "value": 0 }
+      ]
+    
+},
+{
+    "id": 9,
+    "Question":"Choose the synonym for 'abundant':",
+    "Answer":[
+        { "Answer": "Limited", "value": 0 },
+        { "Answer": "Scarce", "value": 0 },
+        { "Answer": "Plentiful", "value": 1 },
+        { "Answer": "Small", "value": 0 }
+      ]
+    
+},
+{
+    "id": 10,
+    "Question":"Select the correct form of the verb in the past tense:",
+    "Answer":[
+        { "Answer": "Runned", "value": 0 },
+        { "Answer": "Running", "value": 0 },
+        { "Answer": "Run", "value": 1 },
+        { "Answer": "Runs", "value": 0 }
+      ]
+   
+}
+
+
+],
+[  
+
+  {
+    "id": 11,
+    "Question": "Which of the following HTML tags is used to create a hyperlink?",
+    "Answer": [
+      { "Answer": "<a>", "value": 1 },
+      { "Answer": "<p>", "value": 0 },
+      { "Answer": "<div>", "value": 0 },
+      { "Answer": "<span>", "value": 0 }
+    ]
+  },
+  {
+    "id": 12,
+    "Question": "In CSS, which property is used to change the background color of an element?",
+    "Answer": [
+      { "Answer": "font-size", "value": 0 },
+      { "Answer": "color", "value": 0 },
+      { "Answer": "background-color", "value": 1 },
+      { "Answer": "text-align", "value": 0 }
+    ]
+  },
+  {
+    "id": 13,
+    "Question": "Which of the following is NOT a data type in Python?",
+    "Answer": [
+      { "Answer": "int", "value": 0 },
+      { "Answer": "str", "value": 0 },
+      { "Answer": "bool", "value": 0 },
+      { "Answer": "array", "value": 1 }
+    ]
+  },
+  {
+    "id": 14,
+    "Question": "Which HTML tag is used to create a numbered list?",
+    "Answer": [
+      { "Answer": "<ul>", "value": 0 },
+      { "Answer": "<li>", "value": 0 },
+      { "Answer": "<ol>", "value": 1 },
+      { "Answer": "<dl>", "value": 0 }
+    ]
+  },
+  {
+    "id": 15,
+    "Question": "How do you select an HTML element with id 'header' in CSS?",
+    "Answer": [
+      { "Answer": "#header", "value": 1 },
+      { "Answer": ".header", "value": 0 },
+      { "Answer": "header", "value": 0 },
+      { "Answer": "id.header", "value": 0 }
+    ]
+  },
+  {
+    "id": 16,
+    "Question": "What does the CSS property 'margin: 10px 5px' mean?",
+    "Answer": [
+      { "Answer": "Set a 10px margin on the top and a 5px margin on the bottom.", "value": 1 },
+      { "Answer": "Set a 10px margin on all sides.", "value": 0 },
+      { "Answer": "Set a 10px margin on the left and a 5px margin on the right.", "value": 0 },
+      { "Answer": "Set a 10px margin on the top, bottom, left, and right.", "value": 0 }
+    ]
+  },
+  {
+    "id": 17,
+    "Question": "What is the correct syntax to declare a constant variable in Java?",
+    "Answer": [{"Answer":"constant int x = 5;"},{"Answer":"final int x = 5;"} , {"Answer":"const int x = 5;"}, {"Answer":"int final x = 5;"}]
+  },
+  {
+    "id": 18,
+    "Question": "What is the purpose of the 'break' statement in a Java switch statement?",
+    "Answer": [
+      { "Answer": "To exit the switch statement and continue with the next case.", "value": 1 },
+      { "Answer": "To skip the current case and check the next one.", "value": 0 },
+      { "Answer": "To end the entire program execution.", "value": 0 },
+      { "Answer": "To prevent errors in the switch statement.", "value": 0 }
+    ]
+  },
+
+{"id": 19,
+"Question":"Which HTML tag is used to create a hyperlink?",
+"Answer":[
+{ "Answer": "<link>", "value": 1 },
+      { "Answer": "<a>", "value": 0 },
+      { "Answer": "<hyperlink>", "value": 0 },
+      { "Answer": "<url>", "value": 0 }]
+
+},
+{"id": 20,
+"Question":"How do you select all <h2> elements that are inside a <div> element in CSS?",
+"Answer":[
+{ "Answer": "div + h2", "value": 1 },
+      { "Answer": "h2 > div", "value": 0 },
+      { "Answer": "div h2", "value": 0 },
+      { "Answer": "h2 div", "value": 0 }]
+}
+
+
+]
+
+  ]
