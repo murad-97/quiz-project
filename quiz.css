@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif ;
+
+}
+body{
+    background-color: #F8F9FD
+}
+header{
+    height:80px ;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.container{
+padding: 40px;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: space-around;
+margin: auto;
+    margin-top: 50px;
+    width: 70%;
+    background-color: white;
+    height: 69vh;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.container .quiz_details{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+}
+.container.quiz_details span{
+    font-size: 18px;
+}
+.container p{
+    font-size: 18px;
+}
+.container .quiz_progress{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 82%; */
+    width: 100%;
+    
+}
+.container .quiz_progress span{
+    font-size: 18px;
+}
+.option{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+
+  /* grid-template-columns: auto auto;
+  grid-template-rows: 50px 50px ;
+ gap: 40px 147px; */
+ 
+
+}
+.option div{
+    /* width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+   
+    border-radius: 7px;
+    height: fit-content;
+    align-items: center;
+
+border: 1px solid rgb(183, 183, 183); */
+margin-bottom: 20px;
+border: 1px solid #e8ebed;
+    border-radius: 5px;
+    width: 40%;
+    padding: 0.75rem 1rem;
+    font-size: 14px;
+    color: #43505b;
+    font-weight: 500;
+    background-color: #fff;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.option div:hover span {
+    color: black;
+    background-color: white;
+  }
+  .option div:hover{
+    background-color: #2699FB;
+  }
+  .option div:hover label{
+    color: white;
+  }
+  
+  
+.option div input{
+    appearance: none;
+}
+.option div span{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#2699FB;
+    margin:  0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #F8F9FD;
+
+}
+.option div label{
+    font-size: 20px;
+}
+.background{
+    background-color: #2699FB;
+    color: #e8ebed;
+}
