@@ -1,4 +1,5 @@
-[[
+[
+  [
     {
       "id": 1,
       "Question": "Mary is 16 years old. She is 4 times older than her brother. How old will Mary be when she is twice his age?",
@@ -90,12 +91,12 @@
 
   {
     "id": 11,
-    "Question": "Which of the following HTML tags is used to create a hyperlink?",
+    "Question": "What does CSS stand for?",
     "Answer": [
-      { "Answer": "<a>", "value": 1 },
-      { "Answer": "<p>", "value": 0 },
-      { "Answer": "<div>", "value": 0 },
-      { "Answer": "<span>", "value": 0 }
+      { "Answer": "Cascading Style Sheets", "value": 1 },
+      { "Answer": "Creative Style Sheets", "value": 0 },
+      { "Answer": "Colorful Style Sheets", "value": 0 },
+      { "Answer": "Computer Style Sheets", "value": 0 }
     ]
   },
   {
@@ -120,22 +121,22 @@
   },
   {
     "id": 14,
-    "Question": "Which HTML tag is used to create a numbered list?",
+    "Question": "What does HTML stand for?",
     "Answer": [
-      { "Answer": "<ul>", "value": 0 },
-      { "Answer": "<li>", "value": 0 },
-      { "Answer": "<ol>", "value": 1 },
-      { "Answer": "<dl>", "value": 0 }
+      { "Answer": "Hyperlink and Text Markup Language", "value": 1 },
+      { "Answer": "Hypertext Markup Language", "value": 0 },
+      { "Answer": "Hyper Transfer Markup Language", "value": 0 },
+      { "Answer": "Home Text Markup Language", "value": 0 }
     ]
   },
   {
     "id": 15,
-    "Question": "How do you select an HTML element with id 'header' in CSS?",
+    "Question": "Which CSS property is used to add rounded corners to an element?",
     "Answer": [
-      { "Answer": "#header", "value": 1 },
-      { "Answer": ".header", "value": 0 },
-      { "Answer": "header", "value": 0 },
-      { "Answer": "id.header", "value": 0 }
+      { "Answer": "border-radius", "value": 1 },
+      { "Answer": "rounded-corners", "value": 0 },
+      { "Answer": "corner-radius", "value": 0 },
+      { "Answer": "border-style", "value": 0 }
     ]
   },
   {
@@ -151,35 +152,35 @@
   {
     "id": 17,
     "Question": "What is the correct syntax to declare a constant variable in Java?",
-    "Answer": [{"Answer":"constant int x = 5;"},{"Answer":"final int x = 5;"} , {"Answer":"const int x = 5;"}, {"Answer":"int final x = 5;"}]
+    "Answer": [{ "Answer": "constant int x = 5", "value": 1 }, { "Answer": "final int x = 5", "value": 0 },{ "Answer": "const int x = 5", "value": 0 }, { "Answer": "int final x = 5", "value": 0 }]
   },
   {
     "id": 18,
-    "Question": "What is the purpose of the 'break' statement in a Java switch statement?",
-    "Answer": [
-      { "Answer": "To exit the switch statement and continue with the next case.", "value": 1 },
-      { "Answer": "To skip the current case and check the next one.", "value": 0 },
-      { "Answer": "To end the entire program execution.", "value": 0 },
-      { "Answer": "To prevent errors in the switch statement.", "value": 0 }
+    "Question": "Which attribute is used to specify an alternate text for an image in HTML?",
+    "Answer": [ 
+      { "Answer": "src", "value": 0 },
+      { "Answer": "alt", "value": 1 },
+      { "Answer": "title", "value": 0 },
+      { "Answer": "link", "value": 0 }
     ]
   },
 
 {"id": 19,
-"Question":"Which HTML tag is used to create a hyperlink?",
+"Question":"Which property is used to change the font size of text in CSS?",
 "Answer":[
-{ "Answer": "<link>", "value": 1 },
-      { "Answer": "<a>", "value": 0 },
-      { "Answer": "<hyperlink>", "value": 0 },
-      { "Answer": "<url>", "value": 0 }]
+{ "Answer": "font-size", "value": 1 },
+      { "Answer": "text-size", "value": 0 },
+      { "Answer": "font-style", "value": 0 },
+      { "Answer": "text-font", "value": 0 }]
 
 },
 {"id": 20,
-"Question":"How do you select all <h2> elements that are inside a <div> element in CSS?",
+"Question":"What CSS property is used to add space between the elements' content and its border?",
 "Answer":[
-{ "Answer": "div + h2", "value": 1 },
-      { "Answer": "h2 > div", "value": 0 },
-      { "Answer": "div h2", "value": 0 },
-      { "Answer": "h2 div", "value": 0 }]
+{ "Answer": "padding", "value": 1 },
+      { "Answer": "margin", "value": 0 },
+      { "Answer": "border-spacing", "value": 0 },
+      { "Answer": "space-between", "value": 0 }]
 }
 
 
