@@ -85,9 +85,24 @@ function finished() {
   <button id="finished">submit your answer</button>`;
   let finish = document.querySelector("#finished");
   finish.addEventListener("click", () => {
-    localStorage.setItem("answers", JSON.stringify(arrayOfAwnsers));
-    localStorage.setItem("mark", mark);
-    localStorage.setItem("time", time.textContent);
+    let current = JSON.parse(localStorage.getItem("current"));
+    let userInfo = JSON.parse(localStorage.getItem("userInfo"));
+    console.log(current);
+    console.log(userInfo);
+    userInfo.forEach((element) => {
+      if (element.email === current.email) {
+        element.answer = arrayOfAwnsers;
+        current.answer = arrayOfAwnsers;
+        element.mark = mark;
+        current.mark = mark;
+        element.time = time.textContent;
+        current.time = time.textContent;
+      }
+    });
+
+    localStorage.setItem("userInfo", JSON.stringify(userInfo));
+    localStorage.setItem("current", JSON.stringify(current));
+
     window.location.href = "../Html/result.html";
   });
 }

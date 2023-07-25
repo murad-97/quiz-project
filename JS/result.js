@@ -230,18 +230,18 @@ let answer = [
     },
   ],
 ];
-var user_answer = {
-  Mark: localStorage.getItem("mark"),
-  answer: JSON.parse(localStorage.getItem("answers")),
-};
+var user_answer = JSON.parse(localStorage.getItem("current"));
 console.log(user_answer.answer);
 let user_answer_lenght = user_answer.answer.length;
 // console.log(user_answer_lenght);
-
+let time = document.querySelector("#time");
+time.innerHTML = `${20 - +user_answer.time.slice(10, 12)}:${
+  60 - +user_answer.time.slice(13)
+}`;
 document.getElementById(
   "Marks Scored"
-).innerHTML = `Marks Scored : ${user_answer.Mark}`;
-let Final_mark = user_answer.Mark;
+).innerHTML = `Marks Scored : ${user_answer.mark}`;
+let Final_mark = user_answer.mark;
 
 function result(Final_mark) {
   let image_result = document.querySelector("#image-result");
@@ -338,7 +338,7 @@ function check_answer() {
 const logoutFunction = () => {
   let logout_btn = document.getElementById("logout");
   logout_btn.addEventListener("click", function () {
-    window.location.href = "/html/home.html";
+    window.location.href = "/Html/Project.html";
   });
 };
 
@@ -353,4 +353,3 @@ ReviweAnswerbtn.addEventListener("click", () => {
   showanswer(answer); // Call the showAnswer function when the button is clicked
   check_answer(); // Call the checkAnswer function when the button is clicked
 });
-

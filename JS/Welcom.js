@@ -8,56 +8,42 @@
 let startNow = document.getElementById("parag1");
 let button = document.getElementById("start1");
 let welcome = document.getElementById("Welcome");
+let current = JSON.parse(localStorage.getItem("current"));
+console.log(current);
 
-window.addEventListener("load", () => {
-    // Display the name 
-    // startNow.textContent = y[y.length - 1].name;
-    let currentUser = 'Shatha Rababah';
-    startNow.textContent = currentUser;
-    
+// Display the name
+// startNow.textContent = y[y.length - 1].name;
 
-    
+startNow.textContent = current.name;
 
+if (localStorage.getItem("completedUsers") == null) {
+  let completedUsers2 = [];
+  localStorage.setItem("completedUsers", JSON.stringify(completedUsers2));
+}
 
-    if (localStorage.getItem("completedUsers") == null) {
-        let completedUsers2 = [];
-        localStorage.setItem("completedUsers",JSON.stringify(completedUsers2));
+button.addEventListener("click", () => {
+  let myArray = JSON.parse(localStorage.getItem("completedUsers"));
+  let w = false;
+  for (let i = 0; i < myArray.length; i++) {
+    if (current.name == myArray[i]) {
+      welcome.textContent = "You're complete it";
+      window.location.href = "/Html/result.html";
+      w = true;
     }
+  }
 
+  if (w == false) {
+    myArray.push(current.name);
+    localStorage.setItem("completedUsers", JSON.stringify(myArray));
+    // بعديييين
+    setTimeout((window.location.href = "/Html/quiz.html"));
+  }
 
-    
-
-
-    button.addEventListener("click", () => {
-        let myArray = JSON.parse(localStorage.getItem("completedUsers"));
-        let w = false;
-        for (let i = 0; i < myArray.length; i++) {
-            if (currentUser == myArray[i]) {
-                welcome.textContent = "You're complete it";
-                window.location.href ="/Html/result.html";
-                w = true
-            }      
-            
-        }
-
-        if (w == false) {
-              myArray.push(currentUser);
-                localStorage.setItem("completedUsers",JSON.stringify(myArray));
-                window.location.href="/Html/quiz.html";
-        }
-
-
-
-
-
-        
-        
-        // if (x == y[y.length - 1].name) {
-        //     completedUsers.push(x);
-        //     localStorage.setItem("completedUsers1", JSON.stringify(completedUsers));
-        //     button.innerHTML = `<a href="dhjs">kkf</a>`;
-        //  
-        //     button.style.display = "none";
-        // }
-    });
+  // if (x == y[y.length - 1].name) {
+  //     completedUsers.push(x);
+  //     localStorage.setItem("completedUsers1", JSON.stringify(completedUsers));
+  //     button.innerHTML = `<a href="dhjs">kkf</a>`;
+  //
+  //     button.style.display = "none";
+  // }
 });

@@ -1,56 +1,58 @@
-
-
 // JavaScript part
-let array = [
-    {
-        email: "sara123@gmail.com",
-        password: "Lama1234",
-        fullname:"sara ababneh"
-    },
-    {
-        
-        email: "sara321@gmail.com",
-        password: "Lama1234",
-        fullname:"mohhamed"
-    },
-    {
-        
-        email: "Ail123@gmail.com",
-        password: "Lama1234",
-        fullname:"Ail "
-    }
-];
+// let array = [
+//     {
+//         email: "sara123@gmail.com",
+//         password: "Lama1234",
+//         fullname:"sara ababneh"
+//     },
+//     {
 
+//         email: "sara321@gmail.com",
+//         password: "Lama1234",
+//         fullname:"mohhamed"
+//     },
+//     {
+
+//         email: "Ali123@gmail.com",
+//         password: "Lama1234",
+//         fullname:"Ali "
+//     }
+// ];
+
+let array = JSON.parse(localStorage.getItem("userInfo"));
+console.log(array);
+let current = {};
 function moh(event) {
-    event.preventDefault()
+  event.preventDefault();
+  if (array === null) {
+    window.alert("register First");
+  } else {
     let emailInput = document.getElementById("einput").value;
     let password = document.getElementById("pass").value;
     let found = false;
 
     for (let i = 0; i < array.length; i++) {
-        if (array[i].email === emailInput) {
-            found = true;
-            if (array[i].password === password) {
-                localStorage.setItem("currentUserName",array[i].fullname)
-                console.log(localStorage.getItem)
-                window.location.href=("/Html/Welcom.html")
+      if (array[i].email === emailInput) {
+        found = true;
+        if (array[i].password === password) {
+          current = array[i];
+          console.log(current);
+          localStorage.setItem("current", JSON.stringify(array[i]));
 
-            } else {
-                window.alert("Incorrect password.");
-            }
-            break; // Break out of the loop once a matching username is found
+        //   console.log(localStorage.getItem);
+            window.location.href = "/Html/Welcom.html";
+        } else {
+          window.alert("Incorrect password.");
         }
+        break; // Break out of the loop once a matching username is found
+      }
     }
 
     if (!found) {
-        window.alert("Username is wrong.");
+      window.alert("register first");
     }
+  }
 }
-
-
-
-
-
 
 // --------------------------------validation--------------------------
 // let email = document.forms["form"]["email"]
@@ -64,7 +66,7 @@ function moh(event) {
 
 // function validation(){
 //     if(email.value.length<9){
-     
+
 //         user_error.style.display="block";
 //         email.style.border="1px solid red";
 //         email.focus();
@@ -80,7 +82,7 @@ function moh(event) {
 
 // function email_verify(){
 //     if(email.value.length>=9){
-     
+
 //         user_error.style.display="none";
 //         email.style.border="1px solid  black";
 //         return true;
@@ -93,5 +95,5 @@ function moh(event) {
 //     pass.style.border="1px solid  black";
 //     return true;
 //     }
- 
+
 // }

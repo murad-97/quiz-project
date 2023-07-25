@@ -3,14 +3,13 @@ let buttonstart = document.getElementById("start");
 function login() {
     // Your login logic here
    
-    return true;
+    return false;
 }
 
 buttonstart.addEventListener("click", () => {
     if (!login()) {
-        alert("Please login to start the quiz");
+        buttonstart.innerHTML = `<a href="/Html/login.html">Start Quiz</a>`;
     } else {
-        
         buttonstart.innerHTML = `<a href="/Html/Welcom.html">Start Quiz</a>`;
     }
 });
