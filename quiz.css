@@ -21,7 +21,7 @@ align-items: start;
 justify-content: space-around;
 margin: auto;
     margin-top: 50px;
-    width: 70%;
+    width: 60%;
     background-color: white;
     height: 69vh;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
@@ -78,7 +78,7 @@ margin: auto;
     align-items: center;
     width: 300px;
     justify-content: center; 
-    padding: 10px;
+    padding: 22px;
     border: 1px solid #ccc;
     background-color: white;
     border-radius: 5px;
@@ -104,7 +104,7 @@ margin: auto;
   }
 
   .option input[type="radio"]:checked + label:before {
-    background-color: green;
+    background-color: rgb(146, 255, 146);
     top: 0;
     transition: all 0.3s ease-in-out; 
   }
@@ -115,7 +115,7 @@ margin: auto;
   }
 
   .option input[type="radio"]:checked + label {
-    background-color: royalblue;
+    background-color: #2699FB;
     color: #fff;
     border-color: rgb(129, 235, 129);
     animation: radio-translate 0.5s ease-in-out;

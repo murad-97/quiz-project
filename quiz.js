@@ -132,7 +132,7 @@ function questionCounter() {
 
 function popup() {
   if (testCount === 0 && qCount === 4) {
-    titl.innerHTML = "IQ Test";
+    titl.innerHTML = "English Test";
     var modal1 = document.getElementById("myModal1");
     console.log(modal1);
     var span1 = document.getElementById("IQ");
@@ -201,7 +201,9 @@ function secpass() {
     clearInterval(countDown);
 
     container.innerHTML = `<h1 id="h1">you are finished</h1>
+
   <button id="finished">submit your answer</button>`;
+  container.style.justifyContent ="center"
     let finish = document.querySelector("#finished");
     finish.addEventListener("click", () => {
       localStorage.setItem("answers", JSON.stringify(arrayOfAwnsers));
