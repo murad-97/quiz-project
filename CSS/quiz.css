@@ -272,3 +272,83 @@ border: 1px solid #e8ebed;
     font-size: 25px !important;
     margin-right: 10px;
   }
+
+  @media screen and (min-width: 481px) and (max-width:786px){
+    .container{
+        width: 90%;
+        height: 75vh;
+        padding: 10px 20px;
+        margin-top: 40px;
+        
+    }
+    .option{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .option label{
+        margin-right: 0;
+    }
+    .quiz_details{
+        width: 100%;
+    }
+    .modal-content{
+        width: 70%;
+    }
+    .modal-content p{
+        font-size: 30px;
+    }
+
+  }
+  @media screen and (max-width: 481px) {
+    h1{
+        font-size: 20px;
+        margin: 3px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .modal-content{
+        
+        width: 90%;
+    }
+    .modal-content p{
+        font-size: 20px;
+    }
+
+    h2{
+
+        margin: 6px 0;
+        font-size: 17px;  
+    }
+    h3{
+        font-size: 15px;  
+        margin: 10px 0;
+    }
+    .numofquestion2{
+        font-size: 15px;
+    }
+    .container{
+        width: 90%;
+        height: 75vh;
+        padding: 10px 20px;
+        margin-top: 40px;
+        
+    }
+    .option{
+        grid-template-columns: 100%;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .option label{
+        margin-right: 0;
+        padding: 10px;
+        width: 100%;
+    }
+    .quiz_details{
+        font-size: 15px;
+        width: 100%;
+    }
+.next{
+    height: 40px !important;
+}
+
+  }

@@ -5,8 +5,6 @@ let qc = document.querySelector(".numofquestion2");
 let allqc = document.querySelector(".numofquestion");
 titl = document.querySelector("#title");
 
-console.log(allqc);
-
 let mark = 0;
 let qCount = 0;
 let testCount = 0;
@@ -18,7 +16,7 @@ function getquestions() {
   request.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
       let dataObj = JSON.parse(this.responseText);
-
+      console.log(dataObj);
       display(dataObj[testCount][qCount]);
       allqc.innerHTML = `<i class="fa fa-question" aria-hidden="true"></i>${allQCount} of 20 Question`;
       questionCounter();
@@ -75,22 +73,24 @@ function getquestions() {
       });
     }
   };
-  request.open("GET", "message.json", true);
+  request.open("GET", "/Json/message.json", true);
   request.send();
 }
 
 getquestions();
 
 function finished() {
+  let time = document.querySelector(".time");
   container.innerHTML = `<h1 id="h1">you are finished</h1>
   <button id="finished">submit your answer</button>`;
   let finish = document.querySelector("#finished");
   finish.addEventListener("click", () => {
     localStorage.setItem("answers", JSON.stringify(arrayOfAwnsers));
     localStorage.setItem("mark", mark);
+    localStorage.setItem("time", time.textContent);
+    window.location.href = "../Html/result.html";
   });
 }
-
 arrayOfAwnsers = [];
 function checkanswer() {
   let input = document.querySelectorAll("input");
@@ -199,15 +199,5 @@ function secpass() {
     sec = sec - 1;
   } else {
     clearInterval(countDown);
-
-    container.innerHTML = `<h1 id="h1">you are finished</h1>
-
-  <button id="finished">submit your answer</button>`;
-  container.style.justifyContent ="center"
-    let finish = document.querySelector("#finished");
-    finish.addEventListener("click", () => {
-      localStorage.setItem("answers", JSON.stringify(arrayOfAwnsers));
-      localStorage.setItem("mark", mark);
-    });
   }
 }
