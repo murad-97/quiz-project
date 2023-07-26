@@ -1,0 +1,226 @@
+.logo{
+    width: 100px; 
+    height: 100px;
+}
+#hello2{
+    display: none;
+}
+
+.logo1{
+
+    width: 100px; 
+    height: 90px;
+}
+.navbar{
+color: brown;
+
+    width: 100%;
+    height: 100px;
+}
+
+.nav-link{
+
+    color:rgb(47,139,196);
+    font-size: 20px;
+   margin-left: 25px;
+   font-weight: 600;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.b1,.b2,.start{ border: 2px rgb(213,234,250) dashed;
+    border-radius: 15px;
+width: 180px;
+height: 40px;
+margin-left: 10px;
+color:rgb(47,139,196);
+font-weight: 700;
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: #FBFBFC;
+}
+.div1,.container-fluid{
+    padding-top: 60px;
+    color:rgb(47,139,196);
+    width: 100%;
+    font-weight: 400;
+/* font-size: 25px; */
+}
+#photo{
+margin-left: 150px;
+    width: 70%;
+    height: 400px;
+    /* margin-top: 1px; */
+}
+.h{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: changeColor 40s infinite;
+}
+.parag{
+    font-size: 25px;
+margin-left:20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+@keyframes changeColor {
+    0% { color: red; }
+            3.33% { color: rgb(67, 11, 171); }
+            6.67% { color: rgb(32, 14, 58); }
+            10% { color: green; }
+            13.33% { color: blue; }
+            16.67% { color: indigo; }
+            20% { color: violet; }
+            23.33% { color: pink; }
+            26.67% { color:rgb(221,120,13); }
+            30% { color: #6600ff; }
+            33.33% { color: #1f075b; }
+            36.67% { color: rgb(221,120,13); }
+            40% { color: #00ff00; }
+            43.33% { color: #0000ff; }
+            46.67% { color: #ffff00; }
+            50% { color: rgb(221,120,13); }
+            53.33% { color: #253c3c; }
+            56.67% { color: #ffcc00; }
+            60% { color: #cc00ff; }
+            63.33% { color: rgb(221,120,13); }
+            66.67% { color: #ff9900; }
+            70% { color: #9900ff; }
+            73.33% { color: #0099ff; }
+            76.67% { color: #ff3300; }
+            80% { color: #3300ff; }
+            83.33% { color: #0033ff; }
+            86.67% { color: #ff6600; }
+            90% { color: #6600ff; }
+            93.33% { color: #0066ff; }
+            96.67% { color: #ffcc00; }
+            100% { color: rgb(43, 17, 80); }
+        }
+.start{
+float: right;
+margin-right: 16px;
+height: 50px;
+
+}
+.start:hover{border:2px dotted rgb(221,120,13) ;
+    box-shadow: 3px 2px 2px 1px rgb(221,120,13);
+}
+
+.row1{
+   
+background-color:rgb(107,151,182);
+
+}
+.sp{
+    font-weight:500;
+
+
+}
+@media only screen and (min-width: 769px) and (max-width: 1279px){
+
+    .parag{
+        font-size:22px ;
+        /* margin-bottom: 20px; */
+
+    }
+
+    .h{
+        font-size:35px ;
+       
+      
+    }
+    #photo{
+        width: 94%;
+        margin-left: 43px;
+     
+        
+            }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 786px){
+
+    .b1,.b2{
+width: 120px;
+font-size: 17px;
+    }
+
+    .nav-link{
+        font-size: 17px; 
+    }
+
+.parag{
+        font-size:17px ;
+        /* margin-bottom: 20px; */
+
+    }
+
+    .h{
+        font-size:25px ;
+       
+      
+    }
+    #photo{
+        width: 91%;
+        margin-left: 43px;
+     
+        
+            }
+            .start{
+                height: 40px;
+                width: 170px;
+            }
+           
+}
+@media only screen and (max-width: 480px){
+    #nav1{
+  display: none;
+
+
+    }
+    .row{
+        padding-top: 100px;
+    }
+    #hello2{
+        display: block;
+    }
+   .navbar-toggler{
+    float: right;
+    margin-top: 20px;
+   } 
+.nav-link1{
+
+    color:rgb(47,139,196);
+    font-size: 15px;
+  font-weight: 200;
+   
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+    .logo{
+        width: 80px;
+    }
+.div1{
+    margin-top: -60px;
+
+}
+    .h{
+        font-size:25px ;
+       
+      
+    }
+    .parag{
+        font-size:17px ;
+        margin-bottom: 20px;
+
+    }
+    .start{
+        height: 40px;
+        width: 170px;
+        
+    }
+    #photo{
+width: 80%;
+margin-left: 43px;
+    }
+       
+       }

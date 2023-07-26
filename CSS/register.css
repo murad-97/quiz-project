@@ -1,0 +1,94 @@
+h1 ,p{
+    text-align: center;
+    color: rgb(50,50,125);
+}
+div{
+  
+border: 1px solid rgb(13, 9, 61);
+width: 500px;
+margin: 100px auto  ;
+background-color: white;
+border-radius: 15%;
+}
+
+body {
+    width: 100%;
+   
+    background-repeat: no-repeat;
+    background-image:url("https://www.xeretec.co.uk/wp-content/uploads/2022/09/Production-Background-Landing-Page.jpg") ;
+    background-size: cover;
+  }
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+    color: rgb(50, 50, 125);
+  }
+  input{
+    border-radius: 5px;
+    height:23px ;
+  
+  }
+  input[type="submit"]:hover{
+    background-color:#1a5f9c;
+   
+  }
+  input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    height: 34px;
+    font-size: 18px;
+    background-color:#2699FB;
+    border-color: #1a5f9c;
+    color: white;
+  }
+ 
+  fieldset{
+    border: none;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; 
+  }
+  hr{
+  width: 70%;
+  color: #011b31;
+  }
+  #firstField{
+    display: block;
+   margin:auto 140px;
+  }
+
+  @media screen and (max-width:480px) {
+   h1,p{
+    font-size: small;
+   }
+   div{
+     width: 350px;
+   }
+   #firstField{
+margin: 10px 60px;
+ }
+ label{
+  font-size: small;
+ }
+ input[type="submit"]{
+  font-size: large;
+ }
+  }
+  @media screen and (min-width:481px) and (max-width:768px){
+  h1,p{
+    font-size: large;
+   }
+   div{
+     width: 450px;
+   }
+   #firstField{
+margin: 20px 115px;
+ }
+ label{
+  font-size: large;
+ }
+ input[type="submit"]{
+  font-size: x-large;
+ }}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="/Css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <img class="image" src="/image/image (25).png" alt="logo" />
+      <form action="" class="form-login" method="post">
+        <div class="form1">
+          <i class="fa-solid fa-envelope"></i>
+          <label for="">Email</label><br />
+          <input
+            class="input"
+            type="text"
+            id="einput"
+            placeholder="Enter your Email..." />
+          <!-- <div id="user_error">Please fill up your username</div> -->
+        </div>
+        <div class="form2">
+          <i class="fa-solid fa-unlock"></i>
+          <label for="">Password</label><br />
+          <input
+            class="input"
+            id="pass"
+            type="password"
+            placeholder="Enter your Password..." />
+          <!-- <div id="pass_error">Please fill up your password</div> -->
+        </div>
+        <!-- <div>
+                <input class="input1" type="checkbox">
+                <label for="">Remember me</label>
+            </div> -->
+        <div>
+          <button onclick="moh(event)">Login</button>
+          <p class="paraghraph">
+            Don't have an account ?<a class="link" href="/Html/register.html">
+              Register now</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="/Js/login.js"></script>
+  </body>
+</html>

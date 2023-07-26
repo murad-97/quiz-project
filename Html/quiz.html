@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/quiz.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <h1>Challenge Yourself With This Test</h1>
+      <div class="quiz_details">
+        <span class="numofquestion"
+          ><i class="fa fa-question" aria-hidden="true"></i
+        ></span>
+        <span class="time"
+          ><i class="fa fa-clock-o" aria-hidden="true"></i
+          ><span>Time left:</span>20:00</span
+        >
+      </div>
+      <hr />
+      <h2 id="title">IQ Test</h2>
+      <div class="quiz_progress">
+        <span class="numofquestion2"></span>
+      </div>
+      <h3 id="h3"></h3>
+
+      <div class="option"></div>
+      <button class="next">Next</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please choose your answer</p>
+      </div>
+    </div>
+    <div id="myModal1" class="modal">
+      <div class="modal-content">
+        <span id="IQ" class="close">&times;</span>
+        <p>now the English part started</p>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <div class="modal-content">
+        <span id="technical" class="close">&times;</span>
+        <p>now the technical part started</p>
+      </div>
+    </div>
+    <script src="/JS/quiz.js"></script>
+  </body>
+</html>
